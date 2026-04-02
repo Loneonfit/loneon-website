@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loneon — Fitness & Ernährung App</title>
+    <meta name="description" content="Loneon macht Fitness einfach. 150 Übungen, 201 Rezepte, intelligente Progression — alles lokal auf deinem iPhone. Keine Werbung, kein Tracking.">
+    <meta name="keywords" content="Fitness App, Ernährung, Training, Workout Tracker, Rezepte, iPhone, Apple Watch, Muskelaufbau, Abnehmen">
+    <meta name="author" content="Loneon">
+    <meta name="theme-color" content="#00C9A7">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Loneon — Fitness & Ernährung App">
+    <meta property="og:description" content="150 Übungen, 201 Rezepte, intelligente Progression. Keine Werbung, kein Tracking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loneon.de">
+    <meta property="og:image" content="https://loneon.de/img/og-image.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="nav-logo-icon">L</div>
+                <span>Loneon</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#ernaehrung">Ernährung</a>
+                <a href="#gesundheit">Gesundheit</a>
+                <a href="#premium">Premium</a>
+                <a href="#datenschutz">Datenschutz</a>
+            </div>
+            <a href="#download" class="nav-cta">Laden</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Jetzt im App Store
+                </div>
+                <h1>Fitness.<br><span class="gradient-text">Einfach gemacht.</span></h1>
+                <p class="hero-subtitle">150 Übungen. 201 Rezepte. Intelligente Progression. Alles lokal auf deinem iPhone — ohne Werbung, ohne Tracking.</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor"><path d="M15.5 1.5c-1.1-1-2.6-1.5-4.1-1.5-2.1 0-4 1.2-5.1 3-1.6-.3-3.2.2-4.3 1.4C.7 5.7.3 7.5.7 9.1c-0.5 1.7 0 3.5 1.3 4.7l6.5 6.5c0.4 0.4 0.9 0.6 1.4 0.6s1-0.2 1.4-0.6l6.5-6.5c1.3-1.3 1.8-3.1 1.3-4.7 0.4-1.6 0-3.4-1.3-4.7z"/></svg>
+                        Kostenlos laden
+                    </a>
+                    <a href="#features" class="btn btn-ghost">Mehr erfahren</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">Übungen</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="201">0</span>
+                        <span class="stat-label">Rezepte</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="7">0</span>
+                        <span class="stat-label">Pläne</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Werbung</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-phone">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="phone-demo">
+                            <div class="demo-header">
+                                <span class="demo-greeting">Guten Abend</span>
+                                <span class="demo-icon">&#x1F3CB;&#xFE0F;</span>
+                            </div>
+                            <div class="demo-card">
+                                <div class="demo-card-title">Heutiges Training</div>
+                                <div class="demo-card-subtitle">Push Day — Brust & Schultern</div>
+                                <div class="demo-exercises">
+                                    <div class="demo-exercise"><span class="demo-dot"></span>Bankdrücken <span class="demo-sets">4x8</span></div>
+                                    <div class="demo-exercise"><span class="demo-dot"></span>Schrägbank KH <span class="demo-sets">3x10</span></div>
+                                    <div class="demo-exercise"><span class="demo-dot"></span>Schulterdrücken <span class="demo-sets">4x8</span></div>
+                                    <div class="demo-exercise"><span class="demo-dot"></span>Seitheben <span class="demo-sets">3x12</span></div>
+                                </div>
+                                <div class="demo-btn">Training starten</div>
+                            </div>
+                            <div class="demo-streak">
+                                <div class="demo-streak-label">Streak</div>
+                                <div class="demo-streak-value">12 Tage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-glow"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Logos / Trust -->
+    <section class="trust">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>100% Lokal</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                    <span>DSGVO-konform</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    <span>Keine Werbung</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    <span>Made in Germany</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features: Training -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Training</span>
+                <h2>Dein Workout.<br><span class="gradient-text">Perfekt gesteuert.</span></h2>
+                <p>Von intelligenter Progression bis zum Pause-Timer — alles was du im Gym brauchst.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card feature-card-large" data-reveal>
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11v11h-11z"/><path d="M6.5 1v4M17.5 1v4M1 6.5h4M19 6.5h4M6.5 19v4M17.5 19v4M1 17.5h4M19 17.5h4"/></svg>
+                    </div>
+                    <h3>Intelligente Progression</h3>
+                    <p>Die App analysiert deine Leistung und schlägt automatisch vor, wann du mehr Gewicht nehmen kannst. Double Progression mit Plateau-Erkennung und Deload-Vorschlägen.</p>
+                </div>
+
+                <div class="feature-card" data-reveal>
+                    <div class="feature-icon mint">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Pause-Timer</h3>
+                    <p>Automatischer Countdown mit Progress-Ring. +30 Sek Button wenn du mehr brauchst.</p>
+                </div>
+
+                <div class="feature-card" data-reveal>
+                    <div class="feature-icon blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                    </div>
+                    <h3>150 Übungen</h3>
+                    <p>Detaillierte Anleitung, 6 Schritte, häufige Fehler und YouTube-Video pro Übung.</p>
+                </div>
+
+                <div class="feature-card" data-reveal>
+                    <div class="feature-icon purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+                    </div>
+                    <h3>RPE-Tracking</h3>
+                    <p>Bewerte jeden Satz mit RPE 6-10. So steuert die App dein Volumen perfekt.</p>
+                </div>
+
+                <div class="feature-card" data-reveal>
+                    <div class="feature-icon orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Gym/Zuhause</h3>
+                    <p>Ein Toggle tauscht alle Gym-Übungen automatisch gegen Bodyweight-Alternativen.</p>
+                </div>
+
+                <div class="feature-card" data-reveal>
+                    <div class="feature-icon red">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>7 Pläne</h3>
+                    <p>Ganzkörper, OK/UK, PPL, Bro-Split, Antagonisten — oder erstelle deinen eigenen Plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Highlight: Workout -->
+    <section class="highlight">
+        <div class="container">
+            <div class="highlight-grid">
+                <div class="highlight-phone" data-reveal>
+                    <div class="phone-frame phone-frame-sm">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="phone-demo">
+                                <div class="demo-workout-header">
+                                    <div class="demo-ex-count">3/6</div>
+                                    <div class="demo-ex-name">Bankdrücken</div>
+                                    <div class="demo-ex-info">Satz 2 von 4</div>
+                                </div>
+                                <div class="demo-set-circles">
+                                    <div class="demo-circle done"></div>
+                                    <div class="demo-circle active"></div>
+                                    <div class="demo-circle"></div>
+                                    <div class="demo-circle"></div>
+                                </div>
+                                <div class="demo-weight-display">
+                                    <div class="demo-weight-label">Gewicht</div>
+                                    <div class="demo-weight-value">82.5 kg</div>
+                                    <div class="demo-weight-hint">+2.5 kg</div>
+                                </div>
+                                <div class="demo-reps-display">
+                                    <div class="demo-reps-btn">-</div>
+                                    <div class="demo-reps-value">8</div>
+                                    <div class="demo-reps-btn">+</div>
+                                </div>
+                                <div class="demo-complete-btn">Satz abschließen</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-text" data-reveal>
+                    <span class="section-tag">Aktives Workout</span>
+                    <h2>Fokussier dich aufs Training.<br>Den Rest macht die App.</h2>
+                    <ul class="highlight-list">
+                        <li>Gewichtsvorschlag basierend auf deiner letzten Leistung</li>
+                        <li>Gerät besetzt? Alternativen aus der Datenbank oder Übung ans Ende</li>
+                        <li>Mini-Player für Apple Music & Spotify</li>
+                        <li>Konfetti + teilbare Stats-Karte am Ende</li>
+                        <li>Aufwärmsätze automatisch berechnet (40% → 90%)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ernährung -->
+    <section class="features features-dark" id="ernaehrung">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ernährung</span>
+                <h2>201 Rezepte.<br><span class="gradient-text">Für jedes Ziel.</span></h2>
+                <p>Aufbau, Abnehmen, vegan, vegetarisch — der Ernährungsplan passt sich deinem Ziel an.</p>
+            </div>
+
+            <div class="nutrition-grid">
+                <div class="nutrition-card" data-reveal>
+                    <div class="nutrition-emoji">&#x1F957;</div>
+                    <h3>Wöchentliche Pläne</h3>
+                    <p>4 Mahlzeiten pro Tag, perfekt auf deine Kalorien und Makros abgestimmt.</p>
+                </div>
+                <div class="nutrition-card" data-reveal>
+                    <div class="nutrition-emoji">&#x1F6D2;</div>
+                    <h3>Einkaufsliste</h3>
+                    <p>Nach Supermarkt-Abteilungen sortiert. Für heute, die Woche oder den Rest der Woche.</p>
+                </div>
+                <div class="nutrition-card" data-reveal>
+                    <div class="nutrition-emoji">&#x1F4F7;</div>
+                    <h3>KI Food-Scanner</h3>
+                    <p>Foto machen, Essen erkennen, Nährwerte erhalten. Oder per Barcode scannen.</p>
+                </div>
+                <div class="nutrition-card" data-reveal>
+                    <div class="nutrition-emoji">&#x1F468;&#x200D;&#x1F373;</div>
+                    <h3>Eigene Rezepte</h3>
+                    <p>Erstelle und speichere deine eigenen Rezepte mit Zutaten und Makros.</p>
+                </div>
+                <div class="nutrition-card" data-reveal>
+                    <div class="nutrition-emoji">&#x2615;</div>
+                    <h3>Thermomix-Export</h3>
+                    <p>Jedes Rezept mit Thermomix-Variante. Per Share Sheet direkt teilbar.</p>
+                </div>
+                <div class="nutrition-card" data-reveal>
+                    <div class="nutrition-emoji">&#x1F4CA;</div>
+                    <h3>Ernährungstagebuch</h3>
+                    <p>Tracke was du wirklich isst. Tagesübersicht mit Kalorien und Makros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gesundheit -->
+    <section class="features" id="gesundheit">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gesundheit</span>
+                <h2>Dein Körper.<br><span class="gradient-text">Im Überblick.</span></h2>
+                <p>Von Fortschrittsfotos bis zum 3D Body Scan — alles an einem Ort.</p>
+            </div>
+
+            <div class="health-grid">
+                <div class="health-item" data-reveal>
+                    <div class="health-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </div>
+                    <div>
+                        <h4>Health Dashboard</h4>
+                        <p>Schritte, Kalorien, Herzfrequenz, SpO2, Temperatur — alles aus HealthKit</p>
+                    </div>
+                </div>
+                <div class="health-item" data-reveal>
+                    <div class="health-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    </div>
+                    <div>
+                        <h4>Fortschrittsfotos</h4>
+                        <p>Vorher/Nachher-Slider, Mediathek mit Zeitverlauf</p>
+                    </div>
+                </div>
+                <div class="health-item" data-reveal>
+                    <div class="health-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                    </div>
+                    <div>
+                        <h4>3D Body Scan</h4>
+                        <p>LiDAR misst 9 Körperumfänge automatisch — kein Maßband nötig</p>
+                    </div>
+                </div>
+                <div class="health-item" data-reveal>
+                    <div class="health-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    </div>
+                    <div>
+                        <h4>Gewichtsverlauf</h4>
+                        <p>7-Tage-Durchschnitt, Trend-Charts, Gewichtsprognose</p>
+                    </div>
+                </div>
+                <div class="health-item" data-reveal>
+                    <div class="health-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 18a5 5 0 00-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/></svg>
+                    </div>
+                    <div>
+                        <h4>Schlaftracker</h4>
+                        <p>Schlafqualität, Wochen-Chart, manuelle Eingabe oder HealthKit</p>
+                    </div>
+                </div>
+                <div class="health-item" data-reveal>
+                    <div class="health-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="5" width="22" height="14" rx="7" ry="7"/><circle cx="8" cy="12" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h4>Apple Watch</h4>
+                        <p>Workout-Steuerung, Satz-Logging, Wasser & Gewicht Quick-Log</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Features Marquee -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>Intervall-Timer</span>
+                <span class="marquee-dot"></span>
+                <span>Stretching-Routinen</span>
+                <span class="marquee-dot"></span>
+                <span>Habit Tracker</span>
+                <span class="marquee-dot"></span>
+                <span>KI Coach</span>
+                <span class="marquee-dot"></span>
+                <span>Gym Finder</span>
+                <span class="marquee-dot"></span>
+                <span>PDF Export</span>
+                <span class="marquee-dot"></span>
+                <span>Wettkampf-Modus</span>
+                <span class="marquee-dot"></span>
+                <span>Trainingspartner</span>
+                <span class="marquee-dot"></span>
+                <span>4 Widgets</span>
+                <span class="marquee-dot"></span>
+                <span>Körperfett-Rechner</span>
+                <span class="marquee-dot"></span>
+                <span>1RM-Rechner</span>
+                <span class="marquee-dot"></span>
+                <span>Hantelscheiben-Rechner</span>
+                <span class="marquee-dot"></span>
+                <span>Intervall-Timer</span>
+                <span class="marquee-dot"></span>
+                <span>Stretching-Routinen</span>
+                <span class="marquee-dot"></span>
+                <span>Habit Tracker</span>
+                <span class="marquee-dot"></span>
+                <span>KI Coach</span>
+                <span class="marquee-dot"></span>
+                <span>Gym Finder</span>
+                <span class="marquee-dot"></span>
+                <span>PDF Export</span>
+                <span class="marquee-dot"></span>
+                <span>Wettkampf-Modus</span>
+                <span class="marquee-dot"></span>
+                <span>Trainingspartner</span>
+                <span class="marquee-dot"></span>
+                <span>4 Widgets</span>
+                <span class="marquee-dot"></span>
+                <span>Körperfett-Rechner</span>
+                <span class="marquee-dot"></span>
+                <span>1RM-Rechner</span>
+                <span class="marquee-dot"></span>
+                <span>Hantelscheiben-Rechner</span>
+                <span class="marquee-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Datenschutz Highlight -->
+    <section class="privacy-section" id="datenschutz">
+        <div class="container">
+            <div class="privacy-grid">
+                <div class="privacy-text" data-reveal>
+                    <span class="section-tag">Datenschutz</span>
+                    <h2>Deine Daten gehören dir. Punkt.</h2>
+                    <p>Loneon speichert alles lokal auf deinem Gerät. Keine Cloud, keine Analytics, keine Tracker. Wir wissen nicht einmal, dass du die App benutzt.</p>
+                    <div class="privacy-checks">
+                        <div class="privacy-check">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Keine Analytics (kein Firebase, kein Google)</span>
+                        </div>
+                        <div class="privacy-check">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Keine Werbe-Tracker</span>
+                        </div>
+                        <div class="privacy-check">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Kein Account nötig</span>
+                        </div>
+                        <div class="privacy-check">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Alle Daten lokal (SwiftData)</span>
+                        </div>
+                        <div class="privacy-check">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>DSGVO & ePrivacy konform</span>
+                        </div>
+                        <div class="privacy-check">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>HealthKit-Daten bleiben auf dem Gerät</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="privacy-visual" data-reveal>
+                    <div class="shield-container">
+                        <div class="shield-glow"></div>
+                        <svg class="shield-icon" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium -->
+    <section class="premium-section" id="premium">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Premium</span>
+                <h2>Kostenlos starten.<br><span class="gradient-text">Grenzenlos werden.</span></h2>
+                <p>Die Basis ist komplett kostenlos. Premium für alle, die mehr wollen.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-reveal>
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="pricing-price">0 &euro;</div>
+                        <span class="pricing-period">für immer</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>2 Trainingspläne</li>
+                        <li>Workout-Tracking</li>
+                        <li>Wassertracking</li>
+                        <li>Gewichtsverlauf</li>
+                        <li>Fortschrittsfotos</li>
+                        <li>Schlaftracker</li>
+                        <li>Health Dashboard</li>
+                        <li>Körpermaße</li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Kostenlos laden</a>
+                </div>
+
+                <div class="pricing-card pricing-card-premium" data-reveal>
+                    <div class="pricing-badge">Beliebt</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="pricing-price">4,99 &euro;</div>
+                        <span class="pricing-period">pro Monat</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>Alles aus Free, plus:</strong></li>
+                        <li>Alle 7 Trainingspläne</li>
+                        <li>201 Rezepte & Ernährung</li>
+                        <li>Trainingspartner</li>
+                        <li>3D Body Scan (LiDAR)</li>
+                        <li>Apple Watch</li>
+                        <li>PDF Export</li>
+                        <li>Wettkampf-Modus</li>
+                        <li>Erweiterte Analysen</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary">Premium starten</a>
+                    <p class="pricing-hint">Auch jährlich für 39,99 &euro; (33% sparen)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Download -->
+    <section class="cta-section" id="download">
+        <div class="container">
+            <div class="cta-content" data-reveal>
+                <h2>Bereit?</h2>
+                <p>Lade Loneon kostenlos und starte dein Training noch heute.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="app-store-badge" aria-label="Im App Store laden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <div>
+                            <small>Laden im</small>
+                            <span>App Store</span>
+                        </div>
+                    </a>
+                </div>
+                <p class="cta-hint">Erfordert iOS 18+ &middot; iPhone &middot; Kostenlos mit In-App-Käufen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="nav-logo-icon">L</div>
+                        <span>Loneon</span>
+                    </div>
+                    <p>Fitness & Ernährung.<br>Einfach gemacht.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>App</h4>
+                    <a href="#features">Features</a>
+                    <a href="#ernaehrung">Ernährung</a>
+                    <a href="#premium">Premium</a>
+                    <a href="#download">Download</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <a href="datenschutz.html">Datenschutzerklärung</a>
+                    <a href="agb.html">Nutzungsbedingungen (AGB)</a>
+                    <a href="impressum.html">Impressum</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Kontakt</h4>
+                    <a href="mailto:info@loneon.de">info@loneon.de</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Loneon. Alle Rechte vorbehalten.</p>
+                <p class="footer-lang">Deutsch &middot; <a href="en.html">English</a> &middot; <a href="es.html">Español</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
