@@ -200,7 +200,10 @@
 
             <div class="legal-header">
                 <h1>Datenschutzerkl&auml;rung</h1>
-                <p class="legal-date">Stand: April 2026</p>
+                <p class="legal-date">Stand: 6. April 2026</p>
+                <p style="margin-top: 12px; font-size: 0.9rem; color: var(--gray-300);">
+                    Diese Datenschutzerkl&auml;rung gilt f&uuml;r die iOS- und Android-Version der Loneon App.
+                </p>
             </div>
 
             <!-- 1. Verantwortlicher -->
@@ -238,18 +241,24 @@
                 <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserf&uuml;llung &mdash; App-Funktionalit&auml;t)</span>
             </div>
 
-            <!-- 4. Apple HealthKit -->
+            <!-- 4. Gesundheitsdaten (Apple HealthKit / Google Health Connect) -->
             <div class="legal-section">
-                <h2>4. Apple HealthKit</h2>
+                <h2>4. Gesundheitsdaten (Apple HealthKit / Google Health Connect)</h2>
                 <p>
-                    Mit deiner ausdr&uuml;cklichen Genehmigung liest und schreibt Loneon folgende Gesundheitsdaten &uuml;ber Apple HealthKit:
+                    Mit deiner ausdr&uuml;cklichen Genehmigung liest und schreibt Loneon folgende Gesundheitsdaten &uuml;ber die Gesundheitsplattform deines Ger&auml;ts:
                 </p>
                 <p style="margin-top: 12px;">
                     <strong>Gelesen:</strong> Schritte, aktive/Grundumsatz-Kalorien, Herzfrequenz, HRV, Blutsauerstoff (SpO&#8322;), K&ouml;rpertemperatur, Schlafanalyse, Gewicht<br>
                     <strong>Geschrieben:</strong> Workouts, Gewichtsmessungen, Wasserzufuhr
                 </p>
                 <p style="margin-top: 12px;">
-                    HealthKit-Daten werden ausschlie&szlig;lich lokal verarbeitet und niemals an Dritte weitergegeben. Du kannst die Berechtigung jederzeit in den iOS-Einstellungen &rarr; Datenschutz &rarr; Health widerrufen.
+                    <strong>iOS:</strong> Die Anbindung erfolgt &uuml;ber Apple HealthKit. Du kannst die Berechtigung jederzeit in den Ger&auml;te-Einstellungen &rarr; Datenschutz &rarr; Health widerrufen.
+                </p>
+                <p style="margin-top: 12px;">
+                    <strong>Android:</strong> Die Anbindung erfolgt &uuml;ber Google Health Connect. Du kannst die Berechtigung jederzeit in den Ger&auml;te-Einstellungen &rarr; Health Connect &rarr; App-Berechtigungen widerrufen.
+                </p>
+                <p style="margin-top: 12px;">
+                    Gesundheitsdaten werden ausschlie&szlig;lich lokal verarbeitet und niemals an Dritte weitergegeben.
                 </p>
                 <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</span>
             </div>
@@ -266,7 +275,7 @@
                 <p style="margin-top: 12px;">
                     Kamerabilder und LiDAR-Daten werden ausschlie&szlig;lich lokal verarbeitet. Es werden keine Bilder oder 3D-Daten an externe Server &uuml;bertragen.
                 </p>
-                <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung &uuml;ber iOS-Berechtigungsdialog)</span>
+                <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung &uuml;ber Berechtigungsdialog des Betriebssystems)</span>
             </div>
 
             <!-- 6. Barcode-Scanner & Open Food Facts -->
@@ -294,13 +303,13 @@
                 </p>
             </div>
 
-            <!-- 8. CloudKit (Trainingspartner) -->
+            <!-- 8. Cloud-Synchronisation (Trainingspartner) -->
             <div class="legal-section">
-                <h2>8. CloudKit (Trainingspartner)</h2>
+                <h2>8. Cloud-Synchronisation (Trainingspartner)</h2>
                 <p>
-                    Die Trainingspartner-Funktion nutzt Apple CloudKit (iCloud) zur Synchronisation folgender Daten:
+                    Die Trainingspartner-Funktion nutzt einen Cloud-Dienst zur Synchronisation folgender Daten:
                 </p>
-                <p style="margin-top: 12px;"><strong>Gespeichert in der &ouml;ffentlichen CloudKit-Datenbank:</strong></p>
+                <p style="margin-top: 12px;"><strong>Gespeicherte Daten:</strong></p>
                 <ul>
                     <li>Partner-Code (6-stellig, anonymisiert)</li>
                     <li>Trainingsstatistiken (Streak, Wochenvolumen, letztes Training)</li>
@@ -311,7 +320,10 @@
                     <strong>NICHT &uuml;bertragen werden:</strong> Name, Alter, Gewicht, Gesundheitsdaten, Fotos, Ern&auml;hrungsdaten.
                 </p>
                 <p style="margin-top: 12px;">
-                    <strong>Empf&auml;nger:</strong> Apple Inc. (CloudKit-Server, Datenspeicherung gem&auml;&szlig; Apple-Datenschutzrichtlinie)<br>
+                    <strong>iOS:</strong> Die Synchronisation erfolgt &uuml;ber Apple CloudKit (iCloud). Empf&auml;nger: Apple Inc. (Datenspeicherung gem&auml;&szlig; Apple-Datenschutzrichtlinie).<br>
+                    <strong>Android:</strong> Die Synchronisation erfolgt &uuml;ber Google Drive oder lokale Speicherung. Empf&auml;nger: Google LLC (Datenspeicherung gem&auml;&szlig; Google-Datenschutzrichtlinie).<br>
+                </p>
+                <p style="margin-top: 12px;">
                     Du kannst die Trainingspartner-Funktion jederzeit ohne Nachteile nicht verwenden.
                 </p>
                 <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Nutzung der Funktion)</span>
@@ -329,7 +341,7 @@
                     <li>Partner-Updates (via CloudKit Silent Push)</li>
                 </ul>
                 <p style="margin-top: 12px;">
-                    Du kannst Benachrichtigungen jederzeit in den iOS-Einstellungen deaktivieren.
+                    Du kannst Benachrichtigungen jederzeit in den Ger&auml;te-Einstellungen (iOS/Android) deaktivieren.
                 </p>
             </div>
 
@@ -337,7 +349,7 @@
             <div class="legal-section">
                 <h2>10. Standortdaten</h2>
                 <p>
-                    Die Gym-Finder Funktion verwendet deinen Standort, um Fitnessstudios in der N&auml;he anzuzeigen. Der Standort wird nur bei aktiver Nutzung abgefragt und nicht gespeichert oder &uuml;bertragen. Die Suche erfolgt &uuml;ber Apple MapKit (lokal auf dem Ger&auml;t).
+                    Die Gym-Finder Funktion verwendet deinen Standort, um Fitnessstudios in der N&auml;he anzuzeigen. Der Standort wird nur bei aktiver Nutzung abgefragt und nicht gespeichert oder &uuml;bertragen. Die Suche erfolgt lokal auf dem Smartphone (iOS: Apple MapKit, Android: Google Maps SDK).
                 </p>
             </div>
 
@@ -351,7 +363,7 @@
                     Du kannst jederzeit &uuml;ber Profil &rarr; &bdquo;Alle Daten l&ouml;schen&ldquo; s&auml;mtliche Trainings-, Ern&auml;hrungs- und Profildaten unwiderruflich entfernen.
                 </p>
                 <p style="margin-top: 12px;">
-                    CloudKit-Daten (Trainingspartner) k&ouml;nnen &uuml;ber iCloud-Einstellungen &rarr; Speicher &rarr; Loneon gel&ouml;scht werden.
+                    Cloud-Daten (Trainingspartner) k&ouml;nnen gel&ouml;scht werden: iOS &uuml;ber iCloud-Einstellungen &rarr; Speicher &rarr; Loneon, Android &uuml;ber Google Drive &rarr; Loneon-Daten entfernen.
                 </p>
                 <p style="margin-top: 12px;">
                     Supplement-Konfigurationen und gespeicherte Proteinpulver werden in den App-Einstellungen (UserDefaults) gespeichert und bei Deinstallation gel&ouml;scht.
@@ -377,17 +389,20 @@
                 </p>
             </div>
 
-            <!-- 13. In-App-Käufe (StoreKit 2) -->
+            <!-- 13. In-App-Käufe -->
             <div class="legal-section">
-                <h2>13. In-App-K&auml;ufe (StoreKit 2)</h2>
+                <h2>13. In-App-K&auml;ufe</h2>
                 <p>
-                    Loneon bietet optionale Premium-Abonnements (Monats- und Jahresabo) &uuml;ber Apple StoreKit 2.
+                    Loneon bietet optionale Premium-Abonnements (Monats- und Jahresabo) &uuml;ber die jeweilige Plattform.
                 </p>
                 <p style="margin-top: 12px;">
                     <strong>Verarbeitet wird:</strong> Kauf-Status (aktiv/abgelaufen), Produkt-ID, Transaktions-Verifizierung.<br>
-                    Zahlungsabwicklung erfolgt ausschlie&szlig;lich &uuml;ber Apple (App Store). Loneon hat keinen Zugriff auf Zahlungsdaten (Kreditkarte etc.).<br>
-                    Abonnements verl&auml;ngern sich automatisch, wenn sie nicht 24h vor Ablauf gek&uuml;ndigt werden.<br>
-                    K&uuml;ndigung &uuml;ber iOS-Einstellungen &rarr; Apple-ID &rarr; Abonnements.
+                    Loneon hat keinen Zugriff auf Zahlungsdaten (Kreditkarte etc.).<br>
+                    Abonnements verl&auml;ngern sich automatisch, wenn sie nicht 24h vor Ablauf gek&uuml;ndigt werden.
+                </p>
+                <p style="margin-top: 12px;">
+                    <strong>iOS:</strong> Zahlungsabwicklung erfolgt &uuml;ber Apple StoreKit 2 (App Store). K&uuml;ndigung &uuml;ber Ger&auml;te-Einstellungen &rarr; Apple-ID &rarr; Abonnements.<br>
+                    <strong>Android:</strong> Zahlungsabwicklung erfolgt &uuml;ber Google Play Billing (Google Play Store). K&uuml;ndigung &uuml;ber Google Play Store &rarr; Abonnements.
                 </p>
                 <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserf&uuml;llung)</span>
             </div>
@@ -403,7 +418,7 @@
                 <p style="margin-top: 12px;">
                     Fotos werden ausschlie&szlig;lich lokal verarbeitet und gespeichert. Es werden keine Bilder an externe Server &uuml;bertragen.
                 </p>
-                <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung &uuml;ber iOS-Berechtigungsdialog)</span>
+                <span class="legal-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung &uuml;ber Berechtigungsdialog des Betriebssystems)</span>
             </div>
 
             <!-- 15. Keine Tracker, keine Werbung -->
@@ -418,7 +433,7 @@
                     <li>&#x2717; Kein Tracking &uuml;ber Apps hinweg (kein IDFA)</li>
                 </ul>
                 <p style="margin-top: 12px;">
-                    Einzige externe Verbindungen: Open Food Facts (Barcode), Bildquellen (Rezeptfotos), Apple CloudKit (Trainingspartner).
+                    Einzige externe Verbindungen: Open Food Facts (Barcode), Bildquellen (Rezeptfotos), Cloud-Synchronisation (Trainingspartner: Apple CloudKit bzw. Google Drive).
                 </p>
             </div>
 
