@@ -61,18 +61,16 @@
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
-            background: var(--mint);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            font-weight: 900;
-            color: var(--dark);
+            width: 160px;
+            height: 160px;
             margin: 0 auto 32px;
-            box-shadow: 0 0 60px rgba(0, 201, 167, 0.3);
+            filter: drop-shadow(0 0 40px rgba(0, 201, 167, 0.3));
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         h1 {
@@ -218,7 +216,7 @@
     </div>
 
     <div class="content">
-        <div class="logo">L</div>
+        <div class="logo"><img src="img/logo.png" alt="Loneon"></div>
         <h1>Loneon<br><span class="gradient-text">Coming Soon</span></h1>
         <p class="subtitle">Deine All-in-One Fitness App. 204 Übungen, 400 Rezepte, KI Coach — ohne Werbung, ohne Tracking. Bald für iOS & Android.</p>
 

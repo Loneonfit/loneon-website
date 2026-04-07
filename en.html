@@ -25,10 +25,10 @@
             background: var(--dark);
             color: var(--white);
             min-height: 100vh;
-            display: flex;
+            margin: 0 auto 32px;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            filter: drop-shadow(0 0 40px rgba(0, 201, 167, 0.3));
+            
             overflow: hidden;
             -webkit-font-smoothing: antialiased;
         }
@@ -42,7 +42,7 @@
             opacity: 0.3;
             animation: float 12s ease-in-out infinite alternate;
         }
-        .blob-1 { width: 500px; height: 500px; background: var(--mint); top: -20%; left: -10%; }
+        .blob-1 { width: 500px; height: 500px;  top: -20%; left: -10%; }
         .blob-2 { width: 400px; height: 400px; background: #7B61FF; bottom: -15%; right: -10%; animation-delay: -4s; }
         .blob-3 { width: 300px; height: 300px; background: #007AFF; top: 50%; left: 50%; transform: translate(-50%, -50%); animation-delay: -8s; }
 
@@ -61,23 +61,23 @@
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
-            background: var(--mint);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            font-weight: 900;
-            color: var(--dark);
+            width: 160px;
+            height: 160px;
+            
+            
             margin: 0 auto 32px;
-            box-shadow: 0 0 60px rgba(0, 201, 167, 0.3);
+            filter: drop-shadow(0 0 40px rgba(0, 201, 167, 0.3));
+            
+            
+            
+            
+            margin: 0 auto 32px;
+            
         }
 
         h1 {
             font-size: clamp(2.5rem, 8vw, 4rem);
-            font-weight: 900;
+            
             letter-spacing: -0.04em;
             line-height: 1.1;
             margin-bottom: 16px;
@@ -104,9 +104,9 @@
         }
 
         .features {
-            display: flex;
+            margin: 0 auto 32px;
             gap: 12px;
-            justify-content: center;
+            
             flex-wrap: wrap;
             margin-bottom: 40px;
         }
@@ -122,15 +122,15 @@
         }
 
         .social-links {
-            display: flex;
+            margin: 0 auto 32px;
             gap: 16px;
-            justify-content: center;
+            
             margin-bottom: 32px;
         }
 
         .social-link {
-            display: flex;
-            align-items: center;
+            margin: 0 auto 32px;
+            filter: drop-shadow(0 0 40px rgba(0, 201, 167, 0.3));
             gap: 8px;
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -165,7 +165,7 @@
             top: 20px;
             right: 20px;
             z-index: 10;
-            display: flex;
+            margin: 0 auto 32px;
             gap: 4px;
             background: rgba(255, 255, 255, 0.06);
             border-radius: 8px;
@@ -184,19 +184,19 @@
         }
 
         .lang-btn:hover { color: var(--white); }
-        .lang-btn.active { background: var(--mint); color: var(--dark); }
+        .lang-btn.active {   }
 
         .flags {
-            display: flex;
+            margin: 0 auto 32px;
             gap: 8px;
-            justify-content: center;
+            
             margin-bottom: 40px;
             font-size: 1.1rem;
         }
 
         .flag-item {
-            display: flex;
-            align-items: center;
+            margin: 0 auto 32px;
+            filter: drop-shadow(0 0 40px rgba(0, 201, 167, 0.3));
             gap: 4px;
             font-size: 0.85rem;
             color: var(--gray);
@@ -218,7 +218,7 @@
     </div>
 
     <div class="content">
-        <div class="logo">L</div>
+        <div class="logo"><img src="img/logo.png" alt="Loneon"></div>
         <h1>Loneon<br><span class="gradient-text">Coming Soon</span></h1>
         <p class="subtitle">Your All-in-One Fitness App. 204 exercises, 400 recipes, AI Coach — no ads, no tracking. Coming soon for iOS & Android.</p>
 
