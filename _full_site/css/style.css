@@ -2090,6 +2090,61 @@ img {
 }
 
 /* ============================================
+   Tools & Extras Grid
+   ============================================ */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tool-card {
+    padding: 20px;
+    transition: all var(--transition);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.tool-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--dark-border-hover);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.tool-emoji {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    display: inline-block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.tool-card h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.tool-card p {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    line-height: 1.5;
+}
+
+/* ============================================
+   Highlight Grid Reverse
+   ============================================ */
+
+.highlight-grid-reverse {
+    direction: rtl;
+}
+
+.highlight-grid-reverse > * {
+    direction: ltr;
+}
+
+/* ============================================
    Responsive
    ============================================ */
 
@@ -2100,6 +2155,10 @@ img {
 
     .bento-card-hero {
         grid-column: span 2;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .languages-banner {
@@ -2171,7 +2230,8 @@ img {
 
     .bento-grid,
     .nutrition-grid,
-    .testimonial-grid {
+    .testimonial-grid,
+    .tools-grid {
         grid-template-columns: 1fr;
     }
 
@@ -2187,6 +2247,10 @@ img {
 
     .highlight-phone {
         order: -1;
+    }
+
+    .highlight-grid-reverse {
+        direction: ltr;
     }
 
     .health-grid {
